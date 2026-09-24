@@ -1,0 +1,415 @@
+
+
+.hero-section {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    min-height: 650px;
+    overflow: hidden;
+    color: #fff;
+}
+
+
+/* Background Video */
+
+.hero-video {
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+    z-index: 0;
+}
+
+
+/* Dark/Brown Overlay */
+
+.hero-overlay {
+    position: absolute;
+    inset: 0;
+
+    background:
+        linear-gradient(
+            90deg,
+            rgba(20, 14, 8, 0.72) 0%,
+            rgba(35, 23, 10, 0.45) 45%,
+            rgba(20, 15, 7, 0.38) 100%
+        );
+
+    z-index: 1;
+}
+
+
+
+
+.hero-navbar {
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    z-index: 10;
+
+    padding-top: 20px;
+    padding-bottom: 20px;
+
+    background: transparent !important;
+}
+
+
+/* Logo */
+
+.hero-navbar .navbar-brand {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+
+    color: #fff !important;
+
+    font-size: 18px;
+    font-weight: 400;
+
+    text-decoration: none;
+}
+
+.logo-icon {
+    font-size: 27px;
+    line-height: 1;
+}
+
+
+/* Navbar Links */
+
+.hero-navbar .nav-link {
+    color: #fff !important;
+
+    font-size: 15px;
+    font-weight: 400;
+
+    padding: 10px 15px !important;
+
+    transition: 0.3s;
+}
+
+.hero-navbar .nav-link:hover {
+    color: #f5ca68 !important;
+}
+
+
+/* Login Button */
+
+.login-btn {
+    display: inline-flex;
+
+    align-items: center;
+    justify-content: center;
+
+    margin-left: 12px;
+
+    padding: 11px 22px;
+
+    background: #fff;
+    color: #222 !important;
+
+    border-radius: 30px;
+
+    text-decoration: none;
+
+    font-size: 14px;
+
+    transition: 0.3s;
+}
+
+.login-btn:hover {
+    background: #f4c95d;
+    color: #111 !important;
+}
+
+
+
+.hero-content {
+    position: relative;
+
+    height: 100%;
+
+    z-index: 5;
+
+    display: flex;
+    align-items: center;
+}
+
+
+.hero-left {
+    max-width: 700px;
+
+    padding-top: 70px;
+}
+
+
+
+.hero-rating {
+    display: flex;
+    align-items: center;
+
+    gap: 9px;
+
+    margin-bottom: 22px;
+
+    font-size: 14px;
+}
+
+
+.farmer-images {
+    display: flex;
+    align-items: center;
+}
+
+
+.farmer-images img {
+    width: 42px;
+    height: 42px;
+
+    object-fit: cover;
+
+    border-radius: 50%;
+
+    border: 2px solid #fff;
+
+    margin-left: -8px;
+}
+
+.farmer-images img:first-child {
+    margin-left: 0;
+}
+
+
+.hero-rating .star {
+    color: #f4c34f;
+
+    font-size: 20px;
+
+    margin-left: 10px;
+}
+
+
+
+.hero-left h1 {
+    margin: 0;
+
+    color: #fff;
+
+    font-size: clamp(55px, 6vw, 76px);
+
+    font-weight: 400;
+
+    line-height: 1.05;
+
+    letter-spacing: -2px;
+}
+
+
+.hero-left h1 span {
+    font-family: Georgia, serif;
+
+    font-style: italic;
+
+    font-weight: 400;
+
+    white-space: nowrap;
+}
+
+
+
+.hero-left p {
+    max-width: 600px;
+
+    margin-top: 22px;
+    margin-bottom: 32px;
+
+    color: rgba(255,255,255,0.9);
+
+    font-size: 17px;
+
+    line-height: 1.6;
+}
+
+
+
+.get-started-btn {
+    display: inline-flex;
+
+    align-items: center;
+    justify-content: center;
+
+    padding: 14px 24px;
+
+    background: #f4c85e;
+
+    color: #17130b;
+
+    border-radius: 30px;
+
+    text-decoration: none;
+
+    font-size: 15px;
+    font-weight: 500;
+
+    transition: all 0.3s ease;
+}
+
+
+.get-started-btn:hover {
+    background: #fff;
+
+    color: #111;
+
+    transform: translateY(-2px);
+}
+
+
+@media (max-width: 991px) {
+
+    .hero-section {
+        min-height: 700px;
+    }
+
+    .hero-navbar {
+        background: rgba(20, 15, 8, 0.65) !important;
+    }
+
+    .hero-navbar .navbar-collapse {
+        background: rgba(20, 15, 8, 0.95);
+
+        margin-top: 15px;
+
+        padding: 15px;
+
+        border-radius: 12px;
+    }
+
+    .hero-navbar .nav-link {
+        padding: 10px !important;
+    }
+
+    .login-btn {
+        margin: 10px 0 0 0;
+    }
+
+    .hero-left {
+        padding-top: 100px;
+    }
+
+    .hero-left h1 {
+        font-size: 48px;
+        letter-spacing: -1px;
+    }
+
+}
+
+
+@media (max-width: 576px) {
+
+    .hero-left h1 {
+        font-size: 40px;
+    }
+
+    .hero-left h1 span {
+        white-space: normal;
+    }
+
+    .hero-left p {
+        font-size: 15px;
+    }
+
+}
+
+/* =========================
+   FACTS VIDEO SECTION
+========================= */
+
+.facts {
+    position: relative;
+    overflow: hidden;
+
+    min-height: 300px;
+
+    display: flex;
+    align-items: center;
+}
+
+
+/* Background Video */
+
+.facts-video {
+    position: absolute;
+
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+
+    z-index: 0;
+}
+
+
+/* Dark Overlay */
+
+.facts-overlay {
+    position: absolute;
+
+    inset: 0;
+
+    background: rgba(20, 35, 18, 0.65);
+
+    z-index: 1;
+}
+
+
+/* Content Video ke upar */
+
+.facts-content {
+    position: relative;
+
+    z-index: 2;
+}
+
+
+/* Counter Number */
+
+.facts h1 {
+    font-size: 55px;
+
+    font-weight: 600;
+
+    margin-bottom: 5px;
+}
+
+
+/* Counter Text */
+
+.facts span {
+    font-size: 17px;
+
+    color: rgba(255, 255, 255, 0.9) !important;
+}
+
+
+/* Mobile */
+
+@media (max-width: 576px) {
+
+    .facts {
+        min-height: 500px;
+    }
+
+    .facts h1 {
+        font-size: 42px;
+    }
+
+}
