@@ -75,8 +75,7 @@
                     <a href="Market.html" class="nav-link">Market</a>
                     <a href="Farmer.html" class="nav-link">Farmer</a>
                     <a href="contact.html" class="nav-link">Contact</a>
-                     <a href="Register.html" class="nav-link">Register</a>
-
+                    <a href="Register.html" class="nav-link">Register</a>
                     <a href="login.html" class="login-btn">
                         Login
                     </a>
@@ -84,26 +83,26 @@
             </div>
         </div>
     </nav>
-    
+
 
     <!-- Hero Content -->
-          <div class="hero-content">
-            <div class="container-fluid px-4 px-lg-5">
-                <div class="hero-left">
-                     <!-- Heading -->
-                    <h1 class="mt-5">
-                        Get in Touch and Grow Your
-                        <br>
-                        <span>Business With Us</span>
-                    </h1>
+    <div class="hero-content">
+        <div class="container-fluid px-4 px-lg-5">
+            <div class="hero-left">
+                <!-- Heading -->
+                <h1 class="mt-5">
+                    Get in Touch and Grow Your
+                    <br>
+                    <span>Business With Us</span>
+                </h1>
                 <!-- Description -->
                 <p>
                     Welcome To Login Page! Log in to your account to access your personalized experience, manage your
                     information, and continue where you left off. We are happy to have you with us again.
                 </p>
-                </div>
             </div>
         </div>
+    </div>
     <!-- Navbar End -->
 
 
@@ -122,27 +121,53 @@
 
 
 
-    <!-- Login Start -->
+    <!-- Register Start -->
     <div class="container mt-5">
-        <div class="row justify-content-center  " style="padding-top: 290px;">
+        <div class="row justify-content-center" style="padding-top: 290px;">
             <div class="col-md-8 col-lg-5">
+
                 <div class="card shadow border-0">
                     <div class="card-body p-4 p-md-5">
+
                         <div class="text-center mb-4">
-                            <h2 class="fw-bold">Login</h2>
+                            <h2 class="fw-bold">Create Account</h2>
                             <p class="text-muted">
-                                Login to your account
+                                Register your new account
                             </p>
                         </div>
+
                         <form>
+
+                            <!-- Full Name -->
+                            <div class="mb-3">
+                                <label for="name" class="form-label">
+                                    Full Name
+                                </label>
+
+                                <input type="text" class="form-control form-control-lg" id="name"
+                                    placeholder="Enter your full name" required>
+                            </div>
+
                             <!-- Email -->
                             <div class="mb-3">
                                 <label for="email" class="form-label">
                                     Email Address
                                 </label>
+
                                 <input type="email" class="form-control form-control-lg" id="email"
                                     placeholder="Enter your email" required>
                             </div>
+
+                            <!-- Phone -->
+                            <div class="mb-3">
+                                <label for="phone" class="form-label">
+                                    Phone Number
+                                </label>
+
+                                <input type="tel" class="form-control form-control-lg" id="phone"
+                                    placeholder="Enter your phone number" required>
+                            </div>
+
                             <!-- Password -->
                             <div class="mb-3">
                                 <label for="password" class="form-label">
@@ -150,45 +175,58 @@
                                 </label>
 
                                 <input type="password" class="form-control form-control-lg" id="password"
-                                    placeholder="Enter your password" required>
-                            </div>
-                            <!-- Remember Me -->
-                            <div class="d-flex justify-content-between align-items-center mb-4">
-
-                                <div class="form-check">
-                                    <input class="form-check-input" type="checkbox" id="remember">
-                                    <label class="form-check-label" for="remember">
-                                        Remember me
-                                    </label>
-                                </div>
-                                <a href="#" class="text-decoration-none">
-                                    Forgot Password?
-                                </a>
+                                    placeholder="Create a password" required>
                             </div>
 
-                            <!-- Login Button -->
+                            <!-- Confirm Password -->
+                            <div class="mb-3">
+                                <label for="confirmPassword" class="form-label">
+                                    Confirm Password
+                                </label>
+
+                                <input type="password" class="form-control form-control-lg" id="confirmPassword"
+                                    placeholder="Confirm your password" required>
+                            </div>
+
+                            <!-- Terms -->
+                            <div class="form-check mb-4">
+                                <input class="form-check-input" type="checkbox" id="terms" required>
+
+                                <label class="form-check-label" for="terms">
+                                    I agree to the
+                                    <a href="#" class="text-decoration-none">
+                                        Terms & Conditions
+                                    </a>
+                                </label>
+                            </div>
+
+                            <!-- Register Button -->
                             <div class="d-grid">
                                 <button type="submit" class="btn btn-primary btn-lg">
-                                    Login
+                                    Register
                                 </button>
                             </div>
 
-                            <!-- Register -->
+                            <!-- Login -->
                             <div class="text-center mt-4">
                                 <span class="text-muted">
-                                    Don't have an account?
+                                    Already have an account?
                                 </span>
-                                <a href="#" class="text-decoration-none fw-bold">
-                                    Register
+
+                                <a href="login.html" class="text-decoration-none fw-bold">
+                                    Login
                                 </a>
                             </div>
+
                         </form>
+
                     </div>
                 </div>
+
             </div>
         </div>
     </div>
-    <!-- Login End -->
+    <!-- Register End -->
 
     <!-- Footer Start -->
     <div class="container-fluid bg-dark text-light footer mt-5 py-5 wow fadeIn" data-wow-delay="0.1s">
@@ -264,6 +302,5 @@
     <!-- Template Javascript -->
     <script src="js/main.js"></script>
 </body>
+
 </html>
-
-
